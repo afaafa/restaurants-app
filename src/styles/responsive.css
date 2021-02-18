@@ -1,0 +1,45 @@
+@media screen and (max-width: 699px) {
+
+    .nav #drawer {
+        display: none;
+    }
+
+    header .nav #drawer {
+        overflow: hidden;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        background-color: rgba(130, 23, 82, 0.9);
+        z-index: 1;
+    }
+    
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav_list {
+        padding: 0;
+    }
+
+    .nav_item {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .nav_item:hover {
+        background-color: #de4463;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    
+    
+    .icon {
+        display: none;
+    }
+
+}
