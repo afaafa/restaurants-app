@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+*:focus{
+    outline: 1px solid;
 }
 
 body, html {
@@ -21,14 +27,17 @@ img {
     display: block;
 }
 
+/*
+header
+*/
 header {
-    background-color: rgba(130, 23, 82, 0.9);
-    height: 65px;
+    background-color: rgb(255 255 255 / 90%);
+    min-height: 80px;
     width: 100%;
     position: fixed;
     z-index: 2;
     top: 0;
-    box-shadow: 0 1px 5px rgb(0 0 0 / 10%);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 20%);
     transition: all .2s ease-out;
 }
 
@@ -36,16 +45,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #f8efd4;
+    color: #434343;
 }
 
 
 .nav > h2 {
-    padding: 0 15px;
     font-family: 'Lobster Two', cursive;
     font-weight: 700;
     font-style: italic;
     padding: 15px;
+    color: #821752;
 }
 
 .nav_list {
@@ -62,18 +71,27 @@ header {
 }
 
 .nav_item > a {
-    color: #f8efd4;
     text-decoration: none;
+    color: #434343;
+    font-weight: bold;
 }
 
 .nav_item a:hover {
-    color: #edc988;
+    color: #821752;
 }
 
 .icon {
     font-size: 30px;
-    padding: 10px 13px;
+    padding: 15px;
+    text-decoration: none;
+    color: #821752;
+    min-width: 44px;
+    min-height: 44px;
 }
+
+/*
+hero jumbotron
+*/
 
 .hero {
     display: flex;
@@ -81,25 +99,138 @@ header {
     min-height: 380px;
     width: 100%;
     text-align: center;
-    text-shadow: 0px 2px 10px #403f3f;
     background-position: center;
-    background-image: url("../public/images/heros/hero-image_4.jpg");
+    background-image: linear-gradient(rgba(0, 0, 5, 0.5), rgba(0, 0, 5, 0.5)), url("../public/images/heros/hero-image_4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: Black !important
 }
 
 .hero_inner {
     margin: 0 auto;
     max-width: 800px;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .hero_title {
-    color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .hero_tagline {
-    color: rgb(255, 255, 255);
     margin-top: 16px;
-    font-size: 15px;
     font-weight: 300;
+    font-size: 18px;
+}
+
+/*
+main
+*/
+
+main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.content {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #e6eaed;
+}
+
+.resto-container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+.explore {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #434343;
+    border-bottom: 1px solid rgb(211, 209, 209);
+    margin-bottom: 2em;
+}
+
+.resto-card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background-color: white;
+}
+  
+.resto-card-header {
+    position: relative;
+}
+
+.resto-card-header img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 13rem;
+}
+
+.resto-card-header p {
+    position: absolute;
+    top: 5%;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 0 8px 8px 0;
+    background-color: rgba(130, 23, 82, 0.9);
+    text-align: justify;
+    font-size: large;
+}
+
+
+.resto-card-body {
+    display: inline-block;
+    font-size: 15px;
+    text-align: left;
+    padding: 25px;
+}
+
+.resto-card-body .rating{
+    font-size: medium;
+    color: #434343;
+    padding-bottom: 15px;
+}
+
+.rating-value {
+    color: #de4463;
+    font-weight: bold;
+}
+
+.resto-card-body .name{
+    padding-bottom: 15px;
+    font-size: x-large;
+    color: #434343;
+}
+
+.resto-card-body .description{
+    font-size: 15px;
+    color: #434343;
+}
+
+.more {
+    display: none;
+}
+
+/*
+footer
+*/
+
+footer {
+    background-color: #252525;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.container {
+    padding: 15px;
 }

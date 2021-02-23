@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="katalog restoran apps">
     <title>Restaurant Apps Starter Project</title>
 </head>
 <body>
@@ -14,24 +14,31 @@
         <ul id="drawer" class="nav_list">
             <li class="nav_item"><a href="http://localhost:8080/">Home</a></li>
             <li class="nav_item"><a href="#">Favorite</a></li>
-            <li class="nav_item"><a href="https://github.com/afaafa">About Us</a></li>
+            <li class="nav_item"><a href="https://github.com/afaafa" title="github">About Us</a></li>
         </ul>
-        <a id="menu" class="icon">
+        <a href="#" id="menu" class="icon" aria-label="click menu">
             <i class="fa fa-bars"></i>
-          </a>
+        </a>
     </nav>
 </header>
-<div class="hero">
-    <div class="hero_inner">
-        <h1 class="hero_title">Temukan Restoran Favorit Anda</h1>
-        <p class="hero_tagline">Kini anda tidak perlu bingung lagi mencari Restoran yang sesuai keinginan anda, temukan dalam satu apps!</p>
-    </div>
-</div>
 <main>
-
+    <section class="hero">
+        <div class="hero_inner">
+            <h1 class="hero_title">Temukan Restoran Terbaikmu.</h1>
+            <p class="hero_tagline">Cari restoran dan tempat makan terbaik sesuai kota terdekat dalam satu apps!</p>
+        </div>
+    </section>
+    <section class="content">
+        <div class="resto-container">
+            <h1 class="explore">Explore Restaurant</h1>
+            <div id="listResto" class="list-resto"></div>
+        </div>
+    </section>
 </main>
 <footer>
-    Copyright © 2020 - Restaurants Apps
+    <div class="container">
+        Copyright © 2021 - Restaurants Apps
+    </div>
 </footer>
 </body>
 </html>

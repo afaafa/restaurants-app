@@ -1,16 +1,18 @@
-@media screen and (max-width: 699px) {
+/*
+mobile nav
+*/
 
+@media screen and (max-width: 699px) {
     .nav #drawer {
         display: none;
     }
-
     header .nav #drawer {
         overflow: hidden;
         position: absolute;
-        top: 70px;
+        top: 90px;
         width: 100%;
-        background-color: rgba(130, 23, 82, 0.9);
-        z-index: 1;
+        background-color: rgb(255 255 255 / 90%);
+        z-index: 1;   
     }
     
     .open {
@@ -26,20 +28,47 @@
         display: inline-block;
         width: 100%;
         text-align: center;
-        padding: 12px;
+        padding: 15px;
     }
 
     .nav_item:hover {
-        background-color: #de4463;
+        background-color: rgba(221, 217, 217, 0.9);
+    }
+}
+/*
+Tablet
+*/
+@media screen and (min-width: 700px) {
+    .icon {
+        display: none;
     }
 
+    .nav {
+        min-height: 80px;
+    }
+    .nav_list {
+        display: flex;
+    }
+    .nav_item {
+        font-size: large;
+    }
+    .list-resto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+    }
 }
 
-@media screen and (min-width: 700px) {
-    
+/*
+laptop
+*/
+@media screen and (min-width: 1024px) {
     
     .icon {
         display: none;
     }
 
+    .list-resto {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
