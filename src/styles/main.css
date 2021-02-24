@@ -27,6 +27,20 @@ img {
     display: block;
 }
 
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+ }
+
+ .skip-link:focus {
+    top: 0;
+ }
+
 /*
 header
 */
@@ -46,6 +60,7 @@ header {
     justify-content: space-between;
     align-items: center;
     color: #434343;
+    width: 100%;
 }
 
 
@@ -55,6 +70,7 @@ header {
     font-style: italic;
     padding: 15px;
     color: #821752;
+    min-width: 44px;
 }
 
 .nav_list {
@@ -74,6 +90,8 @@ header {
     text-decoration: none;
     color: #434343;
     font-weight: bold;
+    min-width: 44px;
+    width: 100%;
 }
 
 .nav_item a:hover {
@@ -138,10 +156,14 @@ main {
     padding-left: 5%;
     padding-right: 5%;
     background-color: #e6eaed;
+    min-width: 44px;
+    min-height: 44px;
+    width: 100%;
 }
 
 .resto-container {
     max-width: 1170px;
+    min-width: 44px;
     padding: 0 15px;
     margin: 0 auto;
   }
@@ -158,6 +180,7 @@ main {
 .resto-card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    width: 100%;
     margin: auto;
     cursor: pointer;
     margin-bottom: 50px;
@@ -192,6 +215,7 @@ main {
     font-size: 15px;
     text-align: left;
     padding: 25px;
+    width: 100%;
 }
 
 .resto-card-body .rating{
@@ -208,6 +232,13 @@ main {
 .resto-card-body .name{
     padding-bottom: 15px;
     font-size: x-large;
+    width: 100%;
+    min-width: 44px;
+    min-height: 44px;
+}
+
+.name > a {
+    text-decoration: none;
     color: #434343;
 }
 
@@ -229,6 +260,7 @@ footer {
     font-size: 14px;
     text-align: center;
     color: #fff;
+    width: 100%;
 }
 
 .container {
